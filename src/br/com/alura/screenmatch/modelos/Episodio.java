@@ -40,6 +40,8 @@ public class Episodio implements Classificavel {
         this.serie = serie;
     }
 
+
+    // Polimorfismo com interface
     @Override
     public int getClassificacao() {
         if (totalVisualizacoes > 100) {
