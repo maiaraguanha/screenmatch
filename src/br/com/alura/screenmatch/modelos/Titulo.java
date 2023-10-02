@@ -12,6 +12,14 @@ public class Titulo {
     private int duracaoEmMinutos;
 
 
+    // Construtor
+
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
+
     // Métodos da classe br.com.alura.screenmatch.modelos.Filme
 
     public int getTotalDeAvaliacoes(){     // get: recupera/ busca valor; método para exibir um acesso private eu uso o get e retorno o valor.
@@ -70,4 +78,5 @@ public class Titulo {
 
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
+
 }
