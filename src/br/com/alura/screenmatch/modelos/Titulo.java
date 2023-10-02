@@ -1,6 +1,6 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Titulo {
+public class Titulo implements Comparable<Titulo>{
 
     // Atributos da classe
 
@@ -79,4 +79,11 @@ public class Titulo {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 
+
+    // Método compareTo, para comparar os titulos para por em ordem alfabética.
+
+    @Override
+    public int compareTo(Titulo outroTitulo) {
+        return this.getNome().compareTo(outroTitulo.getNome());
+    }
 }
